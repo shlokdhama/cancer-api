@@ -4,8 +4,8 @@
 A production-style REST API that serves the cancer type classifier from the [Cancer Gene Expression project](https://github.com/shlokdhama/cancer-type-classification).
 Given 20,531 RNA-Seq gene expression values, returns the predicted cancer type and confidence scores for all five cancer subtypes.
 
-**Live API**: https://cancer-api-xxxx.onrender.com  
-**Interactive docs**: https://cancer-api-xxxx.onrender.com/docs
+**Live API**: https://cancer-api-gu2q.onrender.com  
+**Interactive docs**: https://cancer-api-gu2q.onrender.com/docs
 
 ## Endpoints
 
@@ -18,7 +18,7 @@ Given 20,531 RNA-Seq gene expression values, returns the predicted cancer type a
 ## Example Request
 
 ```bash
-curl -X POST "https://cancer-api-xxxx.onrender.com/predict" \
+curl -X POST "https://cancer-api-gu2q.onrender.com/predict" \
      -H "Content-Type: application/json" \
      -d '{"expression_values": [0.0, 2.01, 3.26, ...]}'
 ```
@@ -63,3 +63,4 @@ http://127.0.0.1:8000/docs
 ## Model
 
 PCA (200 components) + Logistic Regression trained on TCGA RNA-Seq data. 99.38% accuracy, 99.47% Macro F1 across 5 cancer types. Full methodology in the [parent repository](https://github.com/shlokdhama/cancer-type-classification).
+
