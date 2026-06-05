@@ -64,3 +64,7 @@ http://127.0.0.1:8000/docs
 
 PCA (200 components) + Logistic Regression trained on TCGA RNA-Seq data. 99.38% accuracy, 99.47% Macro F1 across 5 cancer types. Full methodology in the [parent repository](https://github.com/shlokdhama/cancer-type-classification).
 
+## Running with Docker
+
+docker pull cassify/cancer-api:v1
+docker run -p 8000:8000 cassify/cancer-api:v1
